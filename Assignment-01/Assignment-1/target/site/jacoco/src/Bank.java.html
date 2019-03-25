@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="da"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Bank.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Assignment-1</a> &gt; <a href="index.source.html" class="el_package">src</a> &gt; <span class="el_source">Bank.java</span></div><h1>Bank.java</h1><pre class="source lang-java linenums">package src;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author pravien
+ */
+<span class="fc" id="L13">public class Bank {</span>
+    
+    public double calculateYearlyInterest(Account account){
+<span class="fc" id="L16">        double balance = account.getBalance();</span>
+        
+<span class="fc bfc" id="L18" title="All 4 branches covered.">        if(balance &gt; 0  &amp;&amp; balance&lt;100) return balance*0.03;</span>
+<span class="fc bfc" id="L19" title="All 4 branches covered.">        else if(balance &gt;= 100 &amp;&amp; balance &lt;1000) return balance*0.05;</span>
+<span class="fc bfc" id="L20" title="All 2 branches covered.">        else if (balance &gt;= 1000) return 0.07*balance;</span>
+<span class="fc" id="L21">        else return 0;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>
